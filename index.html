@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="ListaTelefonica" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Telefonica</title>
+   <!-- CSS only -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="angular.min.js"></script>
+    <style>
+        .jumbotron {
+            width: 400px;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right:auto ;
+        }
+    </style>
+    <script>
+        angular.module("ListaTelefonica", []);
+        angular.module("ListaTelefonica").controller("ListaTelefonicaCtrl", function ($scope){
+            $scope.app = "Lista Telefonica";
+        });
+    </script>
+</head>
+<body ng-controller="ListaTelefonicaCtrl">
+    <div class="jumbotron" m-3>
+        <h4 ng-bind = "app"></h4>
+        <h4>{{app}}</h4>
+    </div>
+</body>
+</html>
